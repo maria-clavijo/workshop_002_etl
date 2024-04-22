@@ -17,3 +17,11 @@ This workshop focuses on extracting information from two different data sources 
 1. Clone the repository on your local machine.
 
 2. Installs the requirements.
+
+3. In the terminal run the following command `docker-compose up airflow-init`
+
+4. Then run `docker-compose up`
+
+5. Log into: http://localhost:8080/
+
+6. Run the dag: “workshop2_dags” 
