@@ -1,0 +1,1 @@
+[2024-04-21T19:58:13.183+0000] {scheduler_job_runner.py:780} ERROR - Executor reports task instance <TaskInstance: workshop2_dags.extract_csv manual__2024-04-21T18:58:03.284812+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

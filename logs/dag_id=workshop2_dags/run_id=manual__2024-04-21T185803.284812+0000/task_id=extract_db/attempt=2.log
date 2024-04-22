@@ -1,0 +1,9 @@
+[2024-04-21T19:54:48.502+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workshop2_dags.extract_db manual__2024-04-21T18:58:03.284812+00:00 [queued]>
+[2024-04-21T19:54:48.530+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workshop2_dags.extract_db manual__2024-04-21T18:58:03.284812+00:00 [queued]>
+[2024-04-21T19:54:48.531+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 3
+[2024-04-21T19:54:48.567+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_db> on 2024-04-21 18:58:03.284812+00:00
+[2024-04-21T19:54:48.584+0000] {standard_task_runner.py:60} INFO - Started process 90 to run task
+[2024-04-21T19:54:48.592+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'workshop2_dags', 'extract_db', 'manual__2024-04-21T18:58:03.284812+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/Airflow/dags_etl.py', '--cfg-path', '/tmp/tmpaozeedzv']
+[2024-04-21T19:54:48.597+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask extract_db
+[2024-04-21T19:54:59.062+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task extract_db ((mysql.connector.errors.DatabaseError) 2005 (HY000): Unknown MySQL server host 'mysql' (-3)
+(Background on this error at: https://sqlalche.me/e/14/4xp6); 90)

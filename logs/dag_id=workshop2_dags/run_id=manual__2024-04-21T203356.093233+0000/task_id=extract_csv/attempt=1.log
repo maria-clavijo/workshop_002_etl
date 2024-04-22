@@ -1,0 +1,12 @@
+[2024-04-21T20:34:01.748+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workshop2_dags.extract_csv manual__2024-04-21T20:33:56.093233+00:00 [queued]>
+[2024-04-21T20:34:01.791+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workshop2_dags.extract_csv manual__2024-04-21T20:33:56.093233+00:00 [queued]>
+[2024-04-21T20:34:01.792+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-21T20:34:01.837+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_csv> on 2024-04-21 20:33:56.093233+00:00
+[2024-04-21T20:34:01.857+0000] {standard_task_runner.py:60} INFO - Started process 73 to run task
+[2024-04-21T20:34:01.866+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'workshop2_dags', 'extract_csv', 'manual__2024-04-21T20:33:56.093233+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/Airflow/dags_etl.py', '--cfg-path', '/tmp/tmpl1nmrs_t']
+[2024-04-21T20:34:01.869+0000] {standard_task_runner.py:88} INFO - Job 45: Subtask extract_csv
+[2024-04-21T20:34:08.362+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 45 for task extract_csv ((mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on 'mysql:3306' (111)
+(Background on this error at: https://sqlalche.me/e/14/4xp6); 73)
+[2024-04-21T20:34:08.368+0000] {process_utils.py:131} INFO - Sending 15 to group 73. PIDs of all processes in the group: [73]
+[2024-04-21T20:34:08.370+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 73
+[2024-04-21T20:34:08.386+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=73, status='terminated', exitcode=1, started='20:34:01') (73) terminated with exit code 1
